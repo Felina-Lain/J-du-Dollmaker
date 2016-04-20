@@ -1,0 +1,23 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using System.Collections.Generic;
+
+public class ListStoring : MonoBehaviour {
+
+
+		public static List<Material> SkinColorS = new List<Material>();
+		public List<Material> SkinColor = new List<Material>();
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+		SkinColorS = SkinColor;
+	
+	}
+}
