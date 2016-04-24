@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D51F11AF-B274-F44A-BB60-1712C5F4ECC3}") = "Jadu Dollmaker", "Assembly-CSharp.csproj", "{3EA24EE0-C0CE-9C44-E517-0B135A5FAEC1}"
+EndProject
+Project("{D51F11AF-B274-F44A-BB60-1712C5F4ECC3}") = "Jadu Dollmaker", "Assembly-CSharp-Editor.csproj", "{D6F11FDF-BAEA-2986-F33E-3CF938566464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA24EE0-C0CE-9C44-E517-0B135A5FAEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA24EE0-C0CE-9C44-E517-0B135A5FAEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA24EE0-C0CE-9C44-E517-0B135A5FAEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA24EE0-C0CE-9C44-E517-0B135A5FAEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F11FDF-BAEA-2986-F33E-3CF938566464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F11FDF-BAEA-2986-F33E-3CF938566464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F11FDF-BAEA-2986-F33E-3CF938566464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F11FDF-BAEA-2986-F33E-3CF938566464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
