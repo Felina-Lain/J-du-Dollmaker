@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
@@ -10,8 +11,6 @@ public class Manager : MonoBehaviour {
 	public BinaryFormatter bf;
 
 	public void Saving(){
-
-
 
 		SavedData dataa = new SavedData();
 		for (int i = 0; i < CorrespondingMaterials._ListSkin.Count; i++){
@@ -36,41 +35,33 @@ public class Manager : MonoBehaviour {
 			
 		}
 			
-		dataa.C_skinr = GameObject.Find("skin").GetComponent<Renderer>().material.color.r;
-		dataa.C_sking = GameObject.Find("skin").GetComponent<Renderer>().material.color.g;
-		dataa.C_skinb = GameObject.Find("skin").GetComponent<Renderer>().material.color.b;
-		dataa.C_skinb = GameObject.Find("skin").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_skin, "skin");
 
-		dataa.C_hairr = GameObject.Find("hair").GetComponent<Renderer>().material.color.r;
-		dataa.C_hairg = GameObject.Find("hair").GetComponent<Renderer>().material.color.g;
-		dataa.C_hairb = GameObject.Find("hair").GetComponent<Renderer>().material.color.b;
-		dataa.C_haira = GameObject.Find("hair").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_hair, "hair");
 
-		dataa.C_wingsr = GameObject.Find("wing").GetComponent<Renderer>().material.color.r;
-		dataa.C_wingsg = GameObject.Find("wing").GetComponent<Renderer>().material.color.g;
-		dataa.C_wingsb = GameObject.Find("wing").GetComponent<Renderer>().material.color.b;
-		dataa.C_wingsa = GameObject.Find("hair").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_wings, "wing");
 
-		dataa.C_itemsr = GameObject.Find("item").GetComponent<Renderer>().material.color.r;
-		dataa.C_itemsg = GameObject.Find("item").GetComponent<Renderer>().material.color.g;
-		dataa.C_itemsb = GameObject.Find("item").GetComponent<Renderer>().material.color.b;
-		dataa.C_itemsa = GameObject.Find("item").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_items, "item");
 
-		dataa.C_clothesr = GameObject.Find("clothe").GetComponent<Renderer>().material.color.r;
-		dataa.C_clothesg = GameObject.Find("clothe").GetComponent<Renderer>().material.color.g;
-		dataa.C_clothesb = GameObject.Find("clothe").GetComponent<Renderer>().material.color.b;
-		dataa.C_clothesb = GameObject.Find("clothe").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_clothes, "clothe");
 
-		dataa.C_shoesr = GameObject.Find("shoe").GetComponent<Renderer>().material.color.r;
-		dataa.C_shoesg = GameObject.Find("shoe").GetComponent<Renderer>().material.color.g;
-		dataa.C_shoesb = GameObject.Find("shoe").GetComponent<Renderer>().material.color.b;
-		dataa.C_shoesb = GameObject.Find("shoe").GetComponent<Renderer>().material.color.a;
+		Feed (dataa.C_shoes, "shoe");
 
 		BinaryFormatter bf = new BinaryFormatter();
-		FileStream file = File.Create (Application.persistentDataPath + "/savedGames.banana");
+		FileStream file = File.Create (Application.persistentDataPath + "/savedGames.bananasplit");
 		bf.Serialize(file, dataa);
 		file.Close();
 
+
+	}
+
+	public void Feed(float[] arrayColor, string goName)
+	{
+		Color color1 = GameObject.Find (goName).GetComponent<Renderer> ().material.GetColor ("_maincolor");
+		arrayColor [0] = color1.r;
+		arrayColor [1] = color1.g;
+		arrayColor [2] = color1.b;
+		arrayColor [3] = color1.a;
 
 	}
 
@@ -78,28 +69,28 @@ public class Manager : MonoBehaviour {
 
 		print("Save Path" + Application.persistentDataPath);
 
-		if(File.Exists(Application.persistentDataPath + "/savedGames.banana")) {
+		if(File.Exists(Application.persistentDataPath + "/savedGames.bananasplit")) {
 			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = File.Open(Application.persistentDataPath + "/savedGames.banana", FileMode.Open);
+			FileStream file = File.Open(Application.persistentDataPath + "/savedGames.bananasplit", FileMode.Open);
 			SavedData dataa = (SavedData)bf.Deserialize(file);
 
 			GameObject.Find("skin").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._skin];
-			GameObject.Find("skin").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_skinr, dataa.C_sking, dataa.C_skinb, dataa.C_skina);
+			GameObject.Find("skin").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_skin[0], dataa.C_skin[1], dataa.C_skin[2], dataa.C_skin[3]));
 
 			GameObject.Find("hair").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._hair];
-			GameObject.Find("hair").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_hairr, dataa.C_hairg, dataa.C_hairb, dataa.C_haira);
+			GameObject.Find("hair").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_hair[0], dataa.C_hair[1], dataa.C_hair[2], dataa.C_hair[3]));
 
 			GameObject.Find("wing").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._wings];
-			GameObject.Find("wing").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_wingsr, dataa.C_wingsg, dataa.C_wingsb, dataa.C_wingsa);
+			GameObject.Find("wing").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_wings[0], dataa.C_wings[1], dataa.C_wings[2], dataa.C_wings[3]));
 
 			GameObject.Find("clothe").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._clothes];
-			GameObject.Find("clothe").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_clothesr, dataa.C_clothesg, dataa.C_clothesb, dataa.C_clothesa);
+			GameObject.Find("clothe").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_clothes[0], dataa.C_clothes[1], dataa.C_clothes[2], dataa.C_clothes[3]));
 
 			GameObject.Find("item").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._items];
-			GameObject.Find("item").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_itemsr, dataa.C_itemsg, dataa.C_itemsb, dataa.C_itemsa);
+			GameObject.Find("item").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_items[0], dataa.C_items[1], dataa.C_items[2], dataa.C_items[3]));
 
 			GameObject.Find("shoe").GetComponent<MeshRenderer>().material = CorrespondingMaterials._ListSkin[dataa._shoes];
-			GameObject.Find("shoe").GetComponent<MeshRenderer>().material.color = new Color (dataa.C_shoesr, dataa.C_shoesg, dataa.C_shoesb, dataa.C_shoesa);
+			GameObject.Find("shoe").GetComponent<Renderer>().material.SetColor("_maincolor", new Color (dataa.C_shoes[0], dataa.C_shoes[1], dataa.C_shoes[2], dataa.C_shoes[3]));
 
 			file.Close();
 		}

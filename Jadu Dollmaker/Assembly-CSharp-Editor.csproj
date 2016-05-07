@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>E:/Program Files/Unity5/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:/Program Files/Unity5/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +216,7 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Blend\SFN_Blend_Difference.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Code\SFN_Code.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\FillColor.shader" />
+     <None Include="Assets\shaders\wings.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ObjectScale\SFN_ObjectScale_Reciprocal.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Add\SFN_Add_5.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Tex2dAsset\SFN_Tex2dAsset.shader" />
@@ -247,37 +248,37 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Desaturate\SFN_Desaturate_REQONLY.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetSky.shader" />
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.EditorTestsRunner">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>E:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="ShaderForge">
- <HintPath>C:/Users/Felina/Documents/SourceTree/Jadu Dollmaker/Jadu Dollmaker/Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
+ <HintPath>C:/Users/Etudiant/Desktop/Jadu Dollmaker/Assets/ShaderForge/Editor/ShaderForge.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>E:/Program Files/Unity5/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>E:/Program Files/Unity5/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
