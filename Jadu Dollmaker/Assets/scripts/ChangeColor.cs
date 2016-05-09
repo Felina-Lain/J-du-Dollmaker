@@ -6,39 +6,16 @@ using System.Collections;
 public class ChangeColor : MonoBehaviour {
 
 	// Use this for initialization
-	public void ChangeSkin() {
-		
-		GameObject.Find("skin").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
+	public void ChangeFirstColor(string name0) {
+
+		GameObject.Find(name0).GetComponent<Renderer>().material.SetColor("_maincolor1",this.GetComponent<Image>().color);
 	
 	}
 
-	public void ChangeHair() {
 
-		GameObject.Find("hair").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
+	public void ChangeSecondColor(string name1) {
 
-	}
-
-	public void ChangeWings() {
-
-		GameObject.Find("wing").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
-
-	}
-
-	public void ChangeClothes() {
-
-		GameObject.Find("clothe").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
-
-	}
-
-	public void ChangeItems() {
-
-		GameObject.Find("item").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
-
-	}
-
-	public void ChangeShoes() {
-
-		GameObject.Find("shoe").GetComponent<Renderer>().material.SetColor("_maincolor",this.GetComponent<Image>().color);
+		GameObject.Find(name1).GetComponent<Renderer>().material.SetColor("_maincolor2",this.GetComponent<Image>().color);
 
 	}
 }

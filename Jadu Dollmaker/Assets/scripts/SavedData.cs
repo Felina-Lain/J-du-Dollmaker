@@ -17,6 +17,7 @@ public class SavedData{
 
 	public int _wings;
 	public float[] C_wings = new float[4];
+	public float[] C_wings2 = new float[4];
 
 	public int _clothes;
 	public float[] C_clothes = new float[4];
@@ -27,6 +28,8 @@ public class SavedData{
 
 	public int _shoes;
 	public float[] C_shoes = new float[4];
+
+	public float[] C_eyes = new float[4];
 
 
 }
