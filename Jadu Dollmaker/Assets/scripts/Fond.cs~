@@ -1,0 +1,49 @@
+﻿using UnityEngine;
+using System.Collections;
+
+//[ExecuteInEditMode]
+public class Fond : MonoBehaviour {
+
+	public float speed;
+
+	private float slide1;
+	private float slide2;
+	private int markcount;
+
+
+	// Update is called once per frame
+	void Update () {
+
+		GetComponent<Renderer>().material.SetFloat("_slider", slide1);
+		GetComponent<Renderer>().material.SetFloat("_slider2", slide2);
+
+
+		if(slide2 < -1f){
+			GetComponent<Renderer>().material.SetColor("_color2", new Color( Random.value, Random.value, Random.value, 0.5f ));
+			markcount = 0;
+			}
+
+		if(slide2 > 2){
+			GetComponent<Renderer>().material.SetColor("_color1", new Color( Random.value, Random.value, Random.value, 0.5f ));		
+			markcount =1;
+			}
+
+
+		switch (markcount) {
+
+		case 0:
+			slide1 += Time.deltaTime * speed;
+			slide2 += Time.deltaTime * speed;
+
+			break;
+
+		case 1:
+			slide1 -= Time.deltaTime * speed;
+			slide2 -= Time.deltaTime * speed;
+
+			break;
+
+		}
+
+	}
+}
