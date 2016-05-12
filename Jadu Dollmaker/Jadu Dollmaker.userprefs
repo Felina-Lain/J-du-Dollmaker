@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Fond.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ColorPicker.cs">
     <Files>
-      <File FileName="Assets\scripts\Fond.cs" Line="27" Column="114" />
+      <File FileName="Assets\scripts\ColorPicker.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

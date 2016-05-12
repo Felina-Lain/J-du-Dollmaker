@@ -111,12 +111,11 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Rotator\SFN_Rotator_PIV_SPD_ANG.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\Common\ReadPackedData.shader" />
      <None Include="Assets\shaders\burning.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV_DEP_REF.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_If\SFN_If.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_FaceSign\SFN_FaceSign.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV.shader" />
+     <None Include="Assets\shaders\wings 1.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_VectorRejection\SFN_VectorRejection.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetParticleAdditive.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_DDXY\SFN_DDXY.shader" />
@@ -136,7 +135,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_InverseLerp\SFN_InverseLerp.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ArcTan\SFN_ArcTan.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Tex2d\SFN_Tex2d_UV.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_NormalVector\SFN_NormalVector.shader" />
      <None Include="Assets\shaders\skin.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Fresnel\SFN_Fresnel_REQONLY.shader" />
@@ -151,7 +149,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ScreenPos\SFN_ScreenPos.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Panner\SFN_Panner_REQONLY.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Lerp\SFN_Lerp.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Rotator\SFN_Rotator_PIV_ANG.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_REQONLY.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Length\SFN_Length.shader" />
@@ -165,7 +162,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_HalfVector\SFN_HalfVector.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Max\SFN_Max_4.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetPBR.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightWrapping.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetPostEffect.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Normalize\SFN_Normalize.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_ArcTan2\SFN_ArcTan2_NPTP.shader" />
@@ -193,11 +189,9 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Reflect\SFN_Reflect.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Time\SFN_Time.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Min\SFN_Min_2.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Blend\SFN_Blend_PinLight.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_SwitchProperty\SFN_SwitchProperty.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_FogColor\SFN_FogColor.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\TessellationDisplacement.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Desaturate\SFN_Desaturate_DES.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Dot\SFN_Dot_ABS.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Parallax\SFN_Parallax_UV_DEP.shader" />
@@ -209,7 +203,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Depth\SFN_Depth.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Add\SFN_Add_2.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Rotator\SFN_Rotator_PIV.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_UVTile\SFN_UVTile.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Get\SFN_Get.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Relay\SFN_Relay.shader" />
@@ -222,8 +215,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Tex2dAsset\SFN_Tex2dAsset.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Sin\SFN_Sin.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Add\SFN_Add_3.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
-     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Fresnel\SFN_Fresnel_NRM.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Min\SFN_Min_4.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Min\SFN_Min_3.shader" />
@@ -245,7 +236,6 @@
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Min\SFN_Min_5.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Blend\SFN_Blend_LinearLight.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Blend\SFN_Blend_HardLight.shader" />
-     <None Include="Assets\shaders\fond.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\GPU Rendering\SFN_Desaturate\SFN_Desaturate_REQONLY.shader" />
      <None Include="Assets\ShaderForge\Editor\InternalResources\Shader Presets\PresetSky.shader" />
  <Reference Include="UnityEditor.Advertisements">
